@@ -53,8 +53,10 @@ function Hero() {
             {displayText}
           </h2>
           <p className="max-w-2xl mb-6 font-light text- lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-            From checkout to global sales tax compliance, companies around the
-            world use Flowbite to simplify their payment stack.
+            From IT Professional to Front End Web Developer, I am Abdulwase
+            Naeemi. I blend expertise with passion, crafting seamless digital
+            experiences. Envisioning the dream job: becoming a Full Stack Web
+            Developer.
           </p>
           <a
             href="#"
