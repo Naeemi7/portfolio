@@ -1,13 +1,18 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 /* Universal pre-defined style */
-*,
+/* *,
 *::before,
 *:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 /* Root  pre-defined style*/
-:root {
+/* :root {
   font-size: calc(1rem + 0.5vw, 1.5rem);
 }
+ */
