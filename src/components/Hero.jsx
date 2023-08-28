@@ -30,9 +30,9 @@ function Hero() {
           );
           setDisplayText("");
           setCurrentIndex(0);
-        }, 1500); // Delay before switching to the next phrase
+        }, 200); // Delay before switching to the next phrase
       }
-    }, 200); // Adjust the typing speed here
+    }, 100); // Adjust the typing speed here
 
     // Clear interval on cleanup
     return () => {
