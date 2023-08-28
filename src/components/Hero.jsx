@@ -1,7 +1,8 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import heroImage from "../assets/images/hero/hero-image.png";
 
 function Hero() {
+  // Phrases to display and cycle through
   const phrases = [
     "Front End Web Developer",
     "Full Stack Web Developer",
@@ -13,13 +14,16 @@ function Hero() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
+    // Set up interval for typing effect
     const interval = setInterval(() => {
       const currentPhrase = phrases[currentPhraseIndex];
       setDisplayText(currentPhrase.substring(0, currentIndex + 1));
       setCurrentIndex((prevIndex) => prevIndex + 1);
 
+      // If current phrase is fully typed
       if (currentIndex === currentPhrase.length - 1) {
         clearInterval(interval);
+        // Set timeout for phrase transition
         setTimeout(() => {
           setCurrentPhraseIndex((prevIndex) =>
             prevIndex === phrases.length - 1 ? 0 : prevIndex + 1
@@ -30,13 +34,16 @@ function Hero() {
       }
     }, 200); // Adjust the typing speed here
 
+    // Clear interval on cleanup
     return () => {
       clearInterval(interval);
     };
   }, [currentIndex, currentPhraseIndex]);
 
   return (
-    <section className="bg-white dark:bg-primary h-screen">
+    <section className="bg-white dark:bg-primary h-70vh">
+      {" "}
+      {/* Set height to 70% of viewport */}
       <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div className="mr-auto place-self-center lg:col-span-7">
           <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-h1Color">
