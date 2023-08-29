@@ -1,3 +1,5 @@
+import yogaProject from "../assets/images/project/yoga-project.png";
+
 function Card({ imageSrc, title, description }) {
   return (
     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -6,16 +8,16 @@ function Card({ imageSrc, title, description }) {
       </a>
       <div className="p-5">
         <a href="#">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
             {title}
           </h5>
         </a>
-        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+        <p className="mb-3 font-lg text-gray-700 dark:text-gray-400">
           {description}
         </p>
         <a
           href="#"
-          className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          className="inline-flex items-center justify-center px-4 py-2 mr-3 text-base font-medium text-center text-white rounded-lg bg-buttonColor hover:bg-h1Color hover:text-gray-600 focus:bg-h2Color focus:text-white"
         >
           Read more
           <svg
@@ -42,32 +44,28 @@ function Card({ imageSrc, title, description }) {
 function Project() {
   const posts = [
     {
-      imageSrc:
-        "https://www.spinutech.com/webres/Image/web-design-development/articles/Web%20Dev-Blog.png",
-      title: "Noteworthy technology acquisitions 2021",
-      description:
-        "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+      imageSrc: yogaProject,
+      title: "Yoga and Meditation",
+      description: `"Yoga and Meditation" is a web application designed to facilitate online yoga and meditation instruction classes.`,
     },
     {
       imageSrc:
         "https://www.spinutech.com/webres/Image/web-design-development/articles/Web%20Dev-Blog.png",
       title: "Another exciting tech news",
-      description:
-        "Stay updated with the latest tech trends and developments happening around the world.",
+      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore sit  et dolore`,
     },
     {
       imageSrc:
         "https://www.spinutech.com/webres/Image/web-design-development/articles/Web%20Dev-Blog.png",
       title: "Mastering web development",
-      description:
-        "Learn how to become a pro in web development through expert insights and tips.",
+      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore sit  et dolore`,
     },
     // ... (other post data)
   ];
 
   return (
     <div className="bg-gray-100 dark:bg-primary py-6 px-4 md:py-10 md:px-12">
-      <div className="container mx-auto flex flex-row flex-wrap gap-12 justify-center">
+      <div className="container mx-auto flex flex-row flex-wrap gap-8 justify-center">
         {posts.map((post, index) => (
           <Card key={index} {...post} />
         ))}
