@@ -10,8 +10,8 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <Project />
       <Contact />
+      <Project />
 
       <Footer />
     </>

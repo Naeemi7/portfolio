@@ -1,6 +1,6 @@
 import yogaProject from "../assets/images/project/yoga-project.png";
 
-function Card({ imageSrc, title, description }) {
+function Card({ imageSrc, title, description, buttonLink }) {
   return (
     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <a href="#">
@@ -16,7 +16,9 @@ function Card({ imageSrc, title, description }) {
           {description}
         </p>
         <a
-          href="#"
+          href={buttonLink}
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center justify-center px-4 py-2 mr-3 text-base font-medium text-center text-white rounded-lg bg-buttonColor hover:bg-h1Color hover:text-gray-600 focus:bg-h2Color focus:text-white"
         >
           Read more
@@ -47,24 +49,32 @@ function Project() {
       imageSrc: yogaProject,
       title: "Yoga and Meditation",
       description: `"Yoga and Meditation" is a web application designed to facilitate online yoga and meditation instruction classes.`,
+      buttonLink: "https://yoga-and-meditation.netlify.app/",
     },
     {
       imageSrc:
         "https://www.spinutech.com/webres/Image/web-design-development/articles/Web%20Dev-Blog.png",
       title: "Another exciting tech news",
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore sit  et dolore`,
+      description:
+        "Stay updated with the latest tech trends and developments happening around the world.",
+      buttonLink: "https://example.com/project2",
     },
     {
       imageSrc:
         "https://www.spinutech.com/webres/Image/web-design-development/articles/Web%20Dev-Blog.png",
       title: "Mastering web development",
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore sit  et dolore`,
+      description:
+        "Learn how to become a pro in web development through expert insights and tips.",
+      buttonLink: "https://example.com/project3",
     },
     // ... (other post data)
   ];
 
   return (
     <div className="bg-gray-100 dark:bg-primary py-6 px-4 md:py-10 md:px-12">
+      <div className="text-center mt-8 mb-11">
+        <h2 className="text-4xl font-extrabold dark:text-h2Color">Projects</h2>
+      </div>
       <div className="container mx-auto flex flex-row flex-wrap gap-8 justify-center">
         {posts.map((post, index) => (
           <Card key={index} {...post} />

@@ -50,7 +50,7 @@ function Navbar() {
             } w-full md:block md:w-auto`}
             id="navbar-default"
           >
-            <ul className="font-medium flex flex-col p-4 md:p-0 mt-  rounded-lg bg-primary md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-primary md:dark:bg-primary ">
+            <ul className="font-medium flex flex-col p-4 md:p-0 mt-2  rounded-lg bg-primary md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-primary md:dark:bg-primary ">
               <li>
                 <a
                   href="#"
