@@ -8,7 +8,7 @@ function Navbar() {
   };
   return (
     <>
-      <nav className="bg-primary border-gray-200 dark:bg-primary">
+      <nav className="bg-primary border-gray-200 dark:bg-primary fixed top-0 left-0 right-0">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="#" className="flex items-center">
             <span
