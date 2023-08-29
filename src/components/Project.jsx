@@ -1,9 +1,9 @@
 import yogaProject from "../assets/images/project/yoga-project.png";
 
-function Card({ imageSrc, title, description, buttonLink }) {
+function Card({ imageSrc, title, description, imageLink, buttonLink }) {
   return (
     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <a href="#">
+      <a href={imageLink} target="_blank" rel="noopener noreferrer">
         <img className="rounded-t-lg" src={imageSrc} alt="" />
       </a>
       <div className="p-5">
@@ -49,7 +49,8 @@ function Project() {
       imageSrc: yogaProject,
       title: "Yoga and Meditation",
       description: `"Yoga and Meditation" is a web application designed to facilitate online yoga and meditation instruction classes.`,
-      buttonLink: "https://yoga-and-meditation.netlify.app/",
+      imageLink: "https://yoga-and-meditation.netlify.app/",
+      buttonLink: "https://github.com/yoga-and-meditation/yoga-and-meditation/",
     },
     {
       imageSrc:
@@ -57,6 +58,7 @@ function Project() {
       title: "Another exciting tech news",
       description:
         "Stay updated with the latest tech trends and developments happening around the world.",
+      imageLink: "https://example.com/project2",
       buttonLink: "https://example.com/project2",
     },
     {
@@ -65,6 +67,7 @@ function Project() {
       title: "Mastering web development",
       description:
         "Learn how to become a pro in web development through expert insights and tips.",
+      imageLink: "https://example.com/project3",
       buttonLink: "https://example.com/project3",
     },
     // ... (other post data)
