@@ -27,9 +27,9 @@ function Footer() {
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                className="text-h2Color hover:text-gray-900 dark:hover:text-h1Color flex items-center space-x-2"
               >
-                <FaFacebook className="w-10 h-10" />
+                <FaFacebook className="w-9 h-9 shadow-md" />
                 <span className="sr-only">Facebook page</span>
               </a>
             </li>
@@ -38,9 +38,9 @@ function Footer() {
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                className="text-h2Color hover:text-gray-900 dark:hover:text-h1Color flex items-center space-x-2"
               >
-                <FaGithub className="w-10 h-10" />
+                <FaGithub className="w-9 h-9 shadow-md" />
                 <span className="sr-only">GitHub account</span>
               </a>
             </li>
@@ -49,9 +49,9 @@ function Footer() {
                 href="https://www.linkedin.com/in/abdulwase-naeemi/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                className="text-h2Color hover:text-gray-900 dark:hover:text-h1Color flex items-center space-x-2"
               >
-                <FaLinkedin className="w-10 h-10" />
+                <FaLinkedin className="w-9 h-9 shadow-md" />
                 <span className="sr-only">LinkedIn account</span>
               </a>
             </li>
@@ -60,9 +60,9 @@ function Footer() {
                 href="mailto:abdulwasenaeemi7@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                className="text-h2Color hover:text-gray-900 dark:hover:text-h1Color flex items-center space-x-2"
               >
-                <SiGmail className="w-10 h-10" />
+                <SiGmail className="w-9 h-9 shadow-md" />
                 <span className="sr-only">Email</span>
               </a>
             </li>
@@ -70,8 +70,8 @@ function Footer() {
         </div>
       </div>
       <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-      <div className="sm:flex sm:items-center sm:justify-between">
-        <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+      <div className="flex items-center justify-center">
+        <span className="text-sm text-gray-500 dark:text-gray-400 mb-4">
           © 2023{" "}
           <a href="https://flowbite.com/" className="hover:underline">
             Abdulwase Naeemi™
