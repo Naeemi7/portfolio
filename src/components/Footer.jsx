@@ -39,7 +39,7 @@ function Footer() {
               srText="Facebook page"
             />
             <SocialMediaLink
-              href="#"
+              href="https://github.com/Naeemi7"
               icon={<FaGithub className="w-9 h-9 shadow-md" />}
               srText="GitHub account"
             />
@@ -55,7 +55,7 @@ function Footer() {
       <div className="flex items-center justify-center">
         <span className="text-sm text-gray-500 dark:text-gray-400 mb-4">
           © 2023{" "}
-          <a href="https://flowbite.com/" className="hover:underline">
+          <a href="#" className="hover:underline">
             Abdulwase Naeemi™
           </a>
           . All Rights Reserved.
