@@ -12,14 +12,7 @@ function Navbar() {
     <>
       <nav className="bg-primary border-gray-200 dark:bg-primary fixed top-0 left-0 right-0">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          {/* <a href="#" className="flex items-center">
-            <span
-              className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-              style={{ fontFamily: "Pacifico, cursive" }}
-            >
-              Abdulwase Naeemi
-            </span>
-          </a> */}
+          {/* Avatar Image */}
           <img
             className="w-10 h-10 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
             src={avatar}
