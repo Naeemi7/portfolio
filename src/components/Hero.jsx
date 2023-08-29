@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { IconName } from "react-icons/fa6";
 import heroImage from "../assets/images/hero/hero-image.png";
 
 function Hero() {
@@ -59,6 +58,7 @@ function Hero() {
             experiences. Envisioning the dream job: becoming a Full Stack Web
             Developer.
           </p>
+
           <a
             href="#"
             className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-buttonColor hover:bg-h1Color hover:text-gray-600 focus:bg-h2Color focus:text-white"
