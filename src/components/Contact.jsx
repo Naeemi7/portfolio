@@ -7,8 +7,10 @@ function Contact() {
             Contact Me
           </h2>
           <p className="mb-10 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-600 sm:text-xl">
-            Got a technical issue? Want to send feedback about a beta feature?
-            Need details about our Business plan? Let us know.
+            If you are interested in learning more about me and my work, or if
+            you simply want to drop a friendly hello, feel free to reach out by
+            sending a message. Your thoughts and inquiries are always welcome,
+            and I am excited to connect with you.
           </p>
           <form action="#" className="space-y-8">
             <div>
