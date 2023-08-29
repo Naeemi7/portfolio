@@ -6,8 +6,8 @@ function Footer() {
       <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
         <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
           © 2023{" "}
-          <a href="https://flowbite.com/" className="hover:underline">
-            Flowbite™
+          <a href="#" className="hover:underline">
+            Digital Portfolio™
           </a>
           . All Rights Reserved.
         </span>
@@ -15,19 +15,25 @@ function Footer() {
         <div className="flex items-center mt-3 md:mt-0">
           <a
             href="#"
-            className="text-gray-500 hover:text-gray-700 mr-4 text-xl md:text-2xl"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-h2Color hover:text-buttonColor mr-4 text-xl md:text-2xl"
           >
             <FaFacebook />
           </a>
           <a
             href="#"
-            className="text-gray-500 hover:text-gray-700 mr-4 text-xl md:text-2xl"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-h2Color hover:text-buttonColor mr-4 text-xl md:text-2xl"
           >
             <FaGithub />
           </a>
           <a
             href="#"
-            className="text-gray-500 hover:text-gray-700 text-xl md:text-2xl"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-h2Color hover:text-buttonColor mr-4 text-xl md:text-2xl"
           >
             <FaLinkedin />
           </a>
