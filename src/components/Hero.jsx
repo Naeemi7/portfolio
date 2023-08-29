@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import { IconName } from "react-icons/fa6";
 import heroImage from "../assets/images/hero/hero-image.png";
 
 function Hero() {
