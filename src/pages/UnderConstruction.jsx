@@ -13,8 +13,8 @@ const UnderConstruction = () => {
             Portfolio Under Construction
           </h1>
           <p className="font-light text-gray-500 text-lg lg:text-xl dark:text-gray-400">
-            Hello, I'm Abdulwase Naeemi, an IT professional and web developer.
-            My portfolio is currently under maintenance to bring you exciting
+            Hello, I'm Abdulwase Naeemi, a Web Developer and IT Professional. My
+            portfolio is currently undergoing maintenance to bring you exciting
             updates and projects. Please check back soon!
           </p>
           <div className="mt-6">
