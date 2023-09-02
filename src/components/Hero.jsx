@@ -42,7 +42,6 @@ function Hero() {
 
   return (
     <section className="bg-white dark:bg-primary h-70vh">
-      {" "}
       {/* Set height to 70% of viewport */}
       <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div className="mr-auto place-self-center lg:col-span-7">
@@ -60,7 +59,9 @@ function Hero() {
           </p>
 
           <a
-            href="#"
+            href="https://drive.google.com/file/d/1R0aIRiom3zbuxU_Mxm2tc8hU3vrXhq1S/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-buttonColor hover:bg-h1Color hover:text-gray-600 focus:bg-h2Color focus:text-white"
           >
             Download Resume
