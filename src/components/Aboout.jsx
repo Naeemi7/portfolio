@@ -1,29 +1,20 @@
 function About() {
   return (
-    <>
-      <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-        {/* Heading section */}
-        <div className="col-span-12 flex justify-center">
-          <h2 className="mb-10 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-primary">
-            About Me
-          </h2>
-        </div>
-
-        {/* Skills container */}
-        <div className="grid grid-cols-5 gap-10">
-          <div>HTML5</div>
-          <div>CSS3</div>
-          <div>JavaScript</div>
-          <div>04</div>
-          <div>05</div>
-          <div>06</div>
-          <div>07</div>
-          <div>08</div>
-
-          <div>09</div>
-        </div>
+    <div className="about-container">
+      <div className="content-container">
+        <h2 className="text-2xl font-bold mb-4">About me</h2>
+        <p className="text-sm text-gray-500 dark:text-gray-400">
+          Experienced IT professional with a 3-year track record in technology
+          and a degree in computer science. Transitioning to web development,
+          merging IT expertise with a strong foundation in web development.
+          Aspiring Front End Web Developer, looking to apply and contribute to
+          innovative projects within a collaborative team, with the ultimate
+          goal of gaining the skills to become a proficient Full Stack Web
+          Developer.
+        </p>
       </div>
-    </>
+      <div className="cards-container"></div>
+    </div>
   );
 }
 
