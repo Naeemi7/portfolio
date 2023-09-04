@@ -2,9 +2,9 @@ import yogaProject from "../assets/images/project/yoga-project.png";
 
 function Card({ imageSrc, title, description, imageLink, buttonLink }) {
   return (
-    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 cards-container">
       <a href={imageLink} target="_blank" rel="noopener noreferrer">
-        <img className="rounded-t-lg" src={imageSrc} alt="" />
+        <img className="rounded-t-lg card-image" src={imageSrc} alt="" />
       </a>
       <div className="p-5">
         <a href="#">
@@ -53,18 +53,14 @@ function Project() {
       buttonLink: "https://github.com/yoga-and-meditation/yoga-and-meditation/",
     },
     {
-      imageSrc:
-        "https://www.spinutech.com/webres/Image/web-design-development/articles/Web%20Dev-Blog.png",
-      title: "Another exciting tech news",
+      imageSrc: yogaProject,
       description:
         "Stay updated with the latest tech trends and developments happening around the world.",
       imageLink: "https://example.com/project2",
       buttonLink: "https://example.com/project2",
     },
     {
-      imageSrc:
-        "https://www.spinutech.com/webres/Image/web-design-development/articles/Web%20Dev-Blog.png",
-      title: "Mastering web development",
+      imageSrc: yogaProject,
       description:
         "Learn how to become a pro in web development through expert insights and tips.",
       imageLink: "https://example.com/project3",
@@ -74,14 +70,18 @@ function Project() {
   ];
 
   return (
-    <div className="bg-gray-100 dark:bg-primary py-6 px-4 md:py-10 md:px-12">
-      <div className="text-center mt-8 mb-11">
-        <h2 className="text-4xl font-extrabold dark:text-h2Color">Projects</h2>
-      </div>
-      <div className="container mx-auto flex flex-row flex-wrap gap-8 justify-center">
-        {posts.map((post, index) => (
-          <Card key={index} {...post} />
-        ))}
+    <div className="project-container">
+      <div className="bg-gray-100 dark:bg-primary py-6 px-4 md:py-10 md:px-12">
+        <div className="text-center mt-8 mb-11">
+          <h2 className="text-4xl font-extrabold dark:text-h2Color">
+            Projects
+          </h2>
+        </div>
+        <div className="container mx-auto flex flex-row flex-wrap gap-8 justify-center">
+          {posts.map((post, index) => (
+            <Card key={index} {...post} />
+          ))}
+        </div>
       </div>
     </div>
   );
