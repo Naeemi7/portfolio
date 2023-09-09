@@ -5,12 +5,14 @@ import About from "./components/Aboout";
 import Project from "./components/Project";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Social from "./components/Social";
 
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
+      <Social />
       {/*    <About /> */}
       <Project />
       <Contact />
