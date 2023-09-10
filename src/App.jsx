@@ -9,7 +9,7 @@ import Social from "./components/Social";
 
 function App() {
   return (
-    <>
+    <div className="app">
       <Navbar />
       <Hero />
       <Social />
@@ -18,7 +18,7 @@ function App() {
       <Contact />
 
       <Footer />
-    </>
+    </div>
   );
 }
 
