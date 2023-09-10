@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import heroImage from "../assets/images/hero/hero-image.png";
+import hero from "../assets/images/hero/hero.svg";
 
 function Hero() {
   // Phrases to display and cycle through
@@ -83,7 +83,7 @@ function Hero() {
           </a>
         </div>
         <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-          <img src={heroImage} alt="mockup" />
+          <img src={hero} alt="mockup" />
         </div>
       </div>
     </section>
