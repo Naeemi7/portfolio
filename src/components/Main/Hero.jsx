@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import hero from "../assets/images/hero/hero.svg";
+
+import hero from "/@images/hero/hero-image.png";
 
 function Hero() {
   // Phrases to display and cycle through

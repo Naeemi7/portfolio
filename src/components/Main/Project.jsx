@@ -1,4 +1,5 @@
-import yogaProject from "../assets/images/project/yoga-project.png";
+import yogaProject from "/@images/project/yoga-project.png";
+import todoProject from "/@images/project/todo-project.png";
 
 function Card({ imageSrc, title, description, imageLink, buttonLink }) {
   return (
@@ -53,11 +54,12 @@ function Project() {
       buttonLink: "https://github.com/yoga-and-meditation/yoga-and-meditation/",
     },
     {
-      imageSrc: yogaProject,
+      imageSrc: todoProject,
+      title: "TodoXpress",
       description:
-        "Stay updated with the latest tech trends and developments happening around the world.",
-      imageLink: "https://example.com/project2",
-      buttonLink: "https://example.com/project2",
+        "TodoXpress is a Full Stack Todo List application built with the MERN stack (MongoDB, netlify serverless functions, React, and Node.js). It allows users to add, edit, delete, and mark tasks as done, providing a comprehensive task management solution.",
+      imageLink: "https://todoxpress.netlify.app/",
+      buttonLink: "https://github.com/Naeemi7/TodoXpress",
     },
     {
       imageSrc: yogaProject,

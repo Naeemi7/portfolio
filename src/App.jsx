@@ -1,12 +1,11 @@
 import "./styles/App.scss";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/Aboout";
-import Project from "./components/Project";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Social from "./components/Social";
-import Skills from "./components/Skills";
+import Navbar from "./components/Navbar/Navbar";
+import Hero from "./components/Main/Hero";
+import About from "./components/Main/Aboout";
+import Project from "./components/Main/Project";
+import Contact from "./components/Main/Contact";
+import Footer from "./components/Footer/Footer";
+import Social from "./components/Main/Social";
 
 function App() {
   return (
@@ -14,7 +13,6 @@ function App() {
       <Navbar />
       <Hero />
       <Social />
-      <Skills />
       <About />
       <Project />
       <Contact />

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import avatar from "../assets/images/navbar/avatar.jpg";
+import avatar from "/@images/navbar/avatar.jpg";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
