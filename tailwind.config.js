@@ -6,6 +6,7 @@ export default {
       colors: {
         // Add your custom colors here
         primary: "#1A2238",
+        secondary: "#d5d6db",
         buttonColor: "#FF6A3D",
         h1Color: "#f4db7d",
         h2Color: "#9daaf2",
