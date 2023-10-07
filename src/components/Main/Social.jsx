@@ -1,6 +1,5 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 
 //Socail Media array
 const links = [
@@ -31,17 +30,6 @@ const links = [
       </>
     ),
     href: "mailto:abdulwasenaeemi7@gmail.com",
-  },
-  {
-    id: 3,
-    child: (
-      <>
-        Resume <BsFillPersonLinesFill size={40} />
-      </>
-    ),
-    href: "/cv.pdf",
-    style: "rounded-br-md",
-    download: true,
   },
 ];
 

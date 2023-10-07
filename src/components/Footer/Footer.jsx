@@ -1,4 +1,4 @@
-import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import SocialMediaIcons from "../Main/SocialMediaIcons";
 
 function Footer() {
   return (
@@ -12,32 +12,8 @@ function Footer() {
           . All Rights Reserved.
         </span>
 
-        <div className="flex items-center mt-3 md:mt-0">
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-h2Color hover:text-buttonColor mr-4 text-xl md:text-2xl"
-          >
-            <FaFacebook />
-          </a>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-h2Color hover:text-buttonColor mr-4 text-xl md:text-2xl"
-          >
-            <FaGithub />
-          </a>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-h2Color hover:text-buttonColor mr-4 text-xl md:text-2xl"
-          >
-            <FaLinkedin />
-          </a>
-        </div>
+        {/* Social Media Icons */}
+        <SocialMediaIcons />
       </div>
     </footer>
   );
