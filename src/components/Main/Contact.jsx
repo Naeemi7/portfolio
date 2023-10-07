@@ -1,3 +1,5 @@
+import profile from "@images/contact/profile.png";
+
 function Contact() {
   return (
     <>
@@ -56,8 +58,8 @@ function Contact() {
 
             <div className="mt-12 lg:flex lg:mt-0 lg:flex-col lg:items-center lg:w-1/2 lg:mx-10">
               <img
-                className="hidden object-cover mx-auto rounded-full lg:block shrink-0 w-96 h-96"
-                src="https://images.unsplash.com/photo-1598257006458-087169a1f08d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                className="hidden object-cover mx-auto rounded-full lg:block shrink-0 w-80 h-80"
+                src={profile}
                 alt=""
               />
 
