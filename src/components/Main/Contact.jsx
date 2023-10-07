@@ -13,7 +13,7 @@ function Contact() {
               </h1>
 
               <p className="mt-4 text-gray-500 dark:text-gray-400">
-                Ask us everything, and we would love to hear from you
+                Ask me everything, and I would love to hear from you
               </p>
 
               <form className="mt-12">
