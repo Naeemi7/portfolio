@@ -22,13 +22,41 @@
       }
     }
 
+    /* Add styles to your skill container */
     .skill-container {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+
       .skill {
-        width: 10rem;
+        width: 10rem; /* Decrease the width */
+        height: 10rem; /* Decrease the height */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        background-color: white; /* Set the background color */
+        border-radius: 8px; /* Add border-radius for shadowbox effect */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow */
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+        &:hover {
+          transform: scale(1.1); /* Scale up on hover */
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+        }
+
+        .skill-image {
+          height: 4rem; /* Decrease the image height */
+          width: 4rem; /* Decrease the image width */
+        }
+
+        .skill-title {
+          font-weight: bold;
+          text-align: center;
+        }
       }
-      border: 1px solid red;
     }
   }
 }

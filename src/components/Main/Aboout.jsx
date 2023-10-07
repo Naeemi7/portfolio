@@ -19,9 +19,14 @@ function About() {
         </section>
 
         <section className="skill-container">
-          {skillAImages.map((image, index) => (
+          {skillAImages.map((item, index) => (
             <div className="skill" key={index}>
-              <img src={image} alt={`Skill ${index}`} />
+              <img
+                className="skill-image"
+                src={item.image}
+                alt={`Skill ${index}`}
+              />
+              <p className="skill-title">{item.title}</p>
             </div>
           ))}
         </section>
