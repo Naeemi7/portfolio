@@ -5,9 +5,10 @@
 /* Import your variables, mixins, and media queries here */
 
 /* About componenet StyleSheet */
-.about-container {
+.skills-main-container {
   background-color: $secondary-background-color;
-  .about-wrapper {
+
+  .skills-sub-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,7 +27,7 @@
     }
 
     /* Add styles to your skill container */
-    .skill-container {
+    .skill-wrapper {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
