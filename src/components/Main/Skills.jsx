@@ -6,8 +6,8 @@ function Skills() {
     <div className="about-container">
       <div className="about-wrapper">
         <section className="content-container">
-          <h2>What I do</h2>
-          <p>
+          <h2>My Skills</h2>
+          {/*    <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
             tempora iste est cum, error reprehenderit dolore rem, repudiandae
             fuga aut nulla ratione. Minima a sed accusantium, quod incidunt
@@ -15,7 +15,7 @@ function Skills() {
             ipsa consectetur repellat, accusamus aliquid laborum totam ea facere
             officiis beatae alias harum non, corporis quam similique aliquam?
             Minima ullam quam fuga consectetur nobis illo voluptate obcaecati,
-          </p>
+          </p> */}
         </section>
 
         <section className="skill-container">

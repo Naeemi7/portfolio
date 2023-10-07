@@ -11,13 +11,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 90rem;
+    max-width: 80rem;
     margin: 0 auto;
     padding: 2rem;
 
     .content-container {
       h2 {
         @include styled-heading-2;
+        margin-bottom: 2rem;
       }
       p {
         @include styled-paragraph;
@@ -32,8 +33,8 @@
       gap: 1rem;
 
       .skill {
-        width: 10rem; /* Decrease the width */
-        height: 10rem; /* Decrease the height */
+        width: 8rem; /* Decrease the width */
+        height: 8rem; /* Decrease the height */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -46,34 +47,19 @@
           background-color 2s infinite;
 
         &:hover {
-          transform: scale(1.1); /* Scale up on hover */
-          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Increase shadow on hover */
-          cursor: pointer; /* Change cursor on hover */
+          transform: scale(1.1);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+          cursor: pointer;
         }
 
         .skill-image {
-          height: 4rem; /* Decrease the image height */
-          width: 4rem; /* Decrease the image width */
+          height: 3rem; /* Decrease the image height */
+          width: 3rem; /* Decrease the image width */
         }
 
         .skill-title {
           font-weight: bold;
           text-align: center;
-        }
-
-        /* Add the infinite background color change animation */
-        animation: backgroundChange 5s infinite;
-
-        @keyframes backgroundChange {
-          0% {
-            background-color: white;
-          }
-          50% {
-            background-color: #d5d6db; /* Change to the desired background color */
-          }
-          100% {
-            background-color: white;
-          }
         }
       }
     }

@@ -10,7 +10,6 @@ import github from "@images/about/github.png";
 import html from "@images/about/html.png";
 import mongodb from "@images/about/mongodb.png";
 import nodeJs from "@images/about/nodejs.png";
-import photoshop from "@images/about/photoshop.png";
 import postman from "@images/about/postman.png";
 import react from "@images/about/react.png";
 import sass from "@images/about/sass.png";
@@ -33,7 +32,6 @@ const skillImages = [
   { title: "Postman", image: postman },
   { title: "Canva", image: conva },
   { title: "Figma", image: figma },
-  { title: "Photoshop", image: photoshop },
 ];
 
 export default skillImages;
