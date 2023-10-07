@@ -2,6 +2,8 @@
 @import "mixin";
 @import "media-query";
 
+/* Import your variables, mixins, and media queries here */
+
 /* About componenet StyleSheet */
 .about-container {
   background-color: $secondary-background-color;
@@ -40,11 +42,13 @@
         background-color: white; /* Set the background color */
         border-radius: 8px; /* Add border-radius for shadowbox effect */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow */
-        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
+          background-color 2s infinite;
 
         &:hover {
           transform: scale(1.1); /* Scale up on hover */
-          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Increase shadow on hover */
+          cursor: pointer; /* Change cursor on hover */
         }
 
         .skill-image {
@@ -55,6 +59,21 @@
         .skill-title {
           font-weight: bold;
           text-align: center;
+        }
+
+        /* Add the infinite background color change animation */
+        animation: backgroundChange 5s infinite;
+
+        @keyframes backgroundChange {
+          0% {
+            background-color: white;
+          }
+          50% {
+            background-color: #d5d6db; /* Change to the desired background color */
+          }
+          100% {
+            background-color: white;
+          }
         }
       }
     }

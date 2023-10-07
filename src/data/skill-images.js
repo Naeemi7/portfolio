@@ -31,7 +31,7 @@ const skillImages = [
   { title: "Git", image: git },
   { title: "GitHub", image: github },
   { title: "Postman", image: postman },
-  { title: "Conva", image: conva },
+  { title: "Canva", image: conva },
   { title: "Figma", image: figma },
   { title: "Photoshop", image: photoshop },
 ];
