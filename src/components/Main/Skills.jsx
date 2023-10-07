@@ -8,8 +8,8 @@ function Skills() {
         <section className="content-container">
           <h2>My Skills</h2>
         </section>
-        <h3>Technical Skills</h3>
-        <section className="skill-wrapper">
+        {/*  <h3>Web Development Skills</h3> */}
+        <section className="skills-wrapper">
           {skillAImages.map((item, index) => (
             <div className="skill" key={index}>
               <img
