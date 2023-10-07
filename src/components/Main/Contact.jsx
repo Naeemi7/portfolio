@@ -1,4 +1,4 @@
-import SocialMediaIcons from "../Main/SocialMediaIcons";
+import SocialMediaIcons from "../Helper/SocialMediaIcons";
 import profile from "@images/contact/profile.png";
 
 function Contact() {
@@ -138,7 +138,7 @@ function Contact() {
                 <h3 className="text-gray-600 dark:text-gray-300 mb-3">
                   Follow me
                 </h3>
-                {/* Social Media icons */}
+
                 <SocialMediaIcons />
               </div>
             </div>

@@ -5,7 +5,7 @@ import Skills from "./components/Main/Skills";
 import Project from "./components/Main/Project";
 import Contact from "./components/Main/Contact";
 import Footer from "./components/Footer/Footer";
-import Social from "./components/Main/Social";
+import Social from "./components/Helper/Social";
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
       <Hero />
       <Social />
       <Skills />
+
       {/*    <Project /> */}
       <Contact />
 
