@@ -1,7 +1,7 @@
 import "../../styles/main.scss";
 import skillAImages from "../../data/skill-images";
 
-function About() {
+function Skills() {
   return (
     <div className="about-container">
       <div className="about-wrapper">
@@ -35,4 +35,4 @@ function About() {
   );
 }
 
-export default About;
+export default Skills;

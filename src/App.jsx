@@ -1,7 +1,7 @@
 import "./styles/App.scss";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Main/Hero";
-import About from "./components/Main/Aboout";
+import Skills from "./components/Main/Skills";
 import Project from "./components/Main/Project";
 import Contact from "./components/Main/Contact";
 import Footer from "./components/Footer/Footer";
@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <Hero />
       <Social />
-      <About />
+      <Skills />
       <Project />
       <Contact />
 
