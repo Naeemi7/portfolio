@@ -1,5 +1,7 @@
-import yogaProject from "/@images/project/yoga-project.png";
-import todoProject from "/@images/project/todo-project.png";
+import "../../styles/main.scss";
+
+import yogaProject from "@images/project/yoga-project.png";
+import todoProject from "@images/project/todo-project.png";
 
 function Card({ imageSrc, title, description, imageLink, buttonLink }) {
   return (

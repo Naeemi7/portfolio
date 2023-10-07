@@ -12,9 +12,9 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "/@": `${currentWorkingDirectory}/src`, // Set the base directory for your project
-      "/@assets": `${currentWorkingDirectory}/src/assets`,
-      "/@images": `${currentWorkingDirectory}/src/assets/images`,
+      "@": `${currentWorkingDirectory}/src`, // Set the base directory for your project
+      "@assets": `${currentWorkingDirectory}/src/assets`,
+      "@images": `${currentWorkingDirectory}/src/assets/images`,
     },
   },
 });
