@@ -1,9 +1,11 @@
 import SocialMediaIcons from "../Helper/SocialMediaIcons";
 import profile from "@images/contact/profile.png";
+import SectionSeperator from "../Seperator/SectionSeperator";
 
 function Contact() {
   return (
     <>
+      <SectionSeperator />
       <section className="min-h-screen bg-white dark:bg-primary">
         <div className="container px-6 py-10 mx-auto">
           <div className="lg:flex lg:items-center lg:-mx-10">

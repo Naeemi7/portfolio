@@ -6,11 +6,13 @@ import Project from "./components/Main/Project";
 import Contact from "./components/Main/Contact";
 import Footer from "./components/Footer/Footer";
 import Social from "./components/Helper/Social";
+import BackToTop from "./components/Helper/BackToTop";
 
 function App() {
   return (
     <div className="app">
       <Navbar />
+      <BackToTop />
       <Hero />
       <Social />
       <Skills />
