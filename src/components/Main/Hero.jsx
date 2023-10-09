@@ -64,7 +64,7 @@ function Hero() {
                 href="https://drive.google.com/file/d/1R0aIRiom3zbuxU_Mxm2tc8hU3vrXhq1S/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-buttonColor hover:bg-h1Color hover:text-gray-600 focus:bg-h2Color focus:text-white"
+                className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-buttonColor hover:bg-h2Color hover:text-white"
               >
                 Download Resume
                 <svg

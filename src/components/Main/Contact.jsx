@@ -53,7 +53,7 @@ function Contact() {
                   ></textarea>
                 </div>
 
-                <button className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-buttonColor rounded-md hover:bg-h1Color hover:text-gray-600 focus:outline-none focus:ring focus:bg-h2Color focus:text-white">
+                <button className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-buttonColor rounded-md hover:bg-h2Color hover:text-white focus:outline-none">
                   get in touch
                 </button>
               </form>
