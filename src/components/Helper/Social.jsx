@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 
 //Socail Media array
@@ -30,6 +30,15 @@ const links = [
       </>
     ),
     href: "mailto:abdulwasenaeemi7@gmail.com",
+  },
+  {
+    id: 4,
+    child: (
+      <>
+        Facebook <FaFacebook size={40} />
+      </>
+    ),
+    href: "https://www.facebook.com/naeemi2021/",
   },
 ];
 
