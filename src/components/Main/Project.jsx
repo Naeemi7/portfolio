@@ -5,9 +5,9 @@ import todoProject from "@images/project/todo-project.png";
 
 function Card({ imageSrc, title, description, imageLink, buttonLink }) {
   return (
-    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 cards-container">
+    <div className="max-w-md bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 cards-container">
       <a href={imageLink} target="_blank" rel="noopener noreferrer">
-        <img className="rounded-t-lg card-image" src={imageSrc} alt="" />
+        <img className="w-full rounded-t-lg card-image" src={imageSrc} alt="" />
       </a>
       <div className="p-5">
         <a href="#">
@@ -18,29 +18,31 @@ function Card({ imageSrc, title, description, imageLink, buttonLink }) {
         <p className="mb-3 font-lg text-gray-700 dark:text-gray-400">
           {description}
         </p>
-        <a
-          href={buttonLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-buttonColor hover:bg-h2Color hover:text-white"
-        >
-          Read more
-          <svg
-            className="w-3.5 h-3.5 ml-2"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 14 10"
+        <div className="flex justify-center">
+          <a
+            href={buttonLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white rounded-lg bg-buttonColor hover:bg-h2Color hover:text-white"
           >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M1 5h12m0 0L9 1m4 4L9 9"
-            />
-          </svg>
-        </a>
+            Read more
+            <svg
+              className="w-3.5 h-3.5 ml-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   );
@@ -51,7 +53,7 @@ function Project() {
     {
       imageSrc: yogaProject,
       title: "Yoga and Meditation",
-      description: `"Yoga and Meditation" is a web application designed to facilitate online yoga and meditation instruction classes.`,
+      description: `Yoga and Meditation" is a web application designed to facilitate online yoga and meditation instruction classes.`,
       imageLink: "https://yoga-and-meditation.netlify.app/",
       buttonLink: "https://github.com/yoga-and-meditation/yoga-and-meditation/",
     },
