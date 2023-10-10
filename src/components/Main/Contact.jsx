@@ -1,11 +1,12 @@
-import { useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
+import Swal from "sweetalert2";
 import SectionSeperator from "../Seperator/SectionSeperator";
-import SocialMediaIcons from "../Helper/SocialMediaIcons";
 import profile from "@images/contact/profile.png";
 
 function Contact() {
   const form = useRef();
+  const [isSuccessVisible, setIsSuccessVisible] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -20,10 +21,22 @@ function Contact() {
       .then(
         (result) => {
           console.log("Message sent");
+          form.current.reset();
+
+          Swal.fire({
+            // Display SweetAlert
+            title: "Good job!",
+            text: "Thank you for your message",
+            icon: "success",
+            timer: 3000,
+            showCancelButton: false,
+            showConfirmButton: false,
+          });
+
           setIsSuccessVisible(true);
 
           setTimeout(() => {
-            form.current.reset();
+            setIsSuccessVisible(false);
           }, 5000);
         },
         (error) => {
@@ -31,6 +44,7 @@ function Contact() {
         }
       );
   };
+
   return (
     <>
       <SectionSeperator />
@@ -91,6 +105,25 @@ function Contact() {
                   Get in Touch
                 </button>
               </form>
+              {isSuccessVisible && (
+                <div className="mt-4 text-green-500">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-5 h-5 inline-block mr-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  Thank you for your message
+                </div>
+              )}
             </div>
 
             <div className="mt-12 lg:flex lg:mt-0 lg:flex-col lg:items-center lg:w-1/2 lg:mx-10">
@@ -141,15 +174,8 @@ function Contact() {
                       strokeLinejoin="round"
                       d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                     />
-                    <div className="mt-6 w-80 md:mt-8">
-                      <h3 className="text-gray-600 dark:text-gray-900 mb-3">
-                        Follow me
-                      </h3>
-
-                      <SocialMediaIcons />
-                    </div>
                   </svg>
-
+                  Naeemi
                   <span className="mx-2 text-gray-700 truncate w-72 dark:text-gray-700">
                     (+49) 176 7196 1939
                   </span>
@@ -176,14 +202,6 @@ function Contact() {
                   </span>
                 </p>
               </div>
-
-              {/* <div className="mt-6 w-80 md:mt-8">
-                <h3 className="text-gray-600 dark:text-gray-900 mb-3">
-                  Follow me
-                </h3>
-
-                <SocialMediaIcons />
-              </div> */}
             </div>
           </div>
         </div>
