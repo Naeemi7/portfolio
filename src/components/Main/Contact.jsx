@@ -1,8 +1,36 @@
+import { useRef, useState } from "react";
+import emailjs from "emailjs-com";
+import SectionSeperator from "../Seperator/SectionSeperator";
 import SocialMediaIcons from "../Helper/SocialMediaIcons";
 import profile from "@images/contact/profile.png";
-import SectionSeperator from "../Seperator/SectionSeperator";
 
 function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        form.current,
+        import.meta.env.VITE_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log("Message sent");
+          setIsSuccessVisible(true);
+
+          setTimeout(() => {
+            form.current.reset();
+          }, 5000);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <>
       <SectionSeperator />
@@ -18,7 +46,7 @@ function Contact() {
                 Ask me everything, and I would love to hear from you
               </p>
 
-              <form className="mt-12">
+              <form className="mt-12" ref={form} onSubmit={sendEmail}>
                 <div className="-mx-2 md:items-center md:flex">
                   <div className="flex-1 px-2">
                     <label className="block mb-2 text-sm text-gray-600 dark:text-gray-700">
@@ -26,8 +54,10 @@ function Contact() {
                     </label>
                     <input
                       type="text"
+                      name="user_name"
                       placeholder="John Doe"
                       className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-00 bg-white border border-gray-600 rounded-md dark:placeholder-gray-600 dark:bg-secondary dark:text-gray-6000 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                      required
                     />
                   </div>
 
@@ -37,8 +67,10 @@ function Contact() {
                     </label>
                     <input
                       type="email"
+                      name="user_email"
                       placeholder="johndoe@example.com"
                       className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-secondary dark:text-gray-600 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                      required
                     />
                   </div>
                 </div>
@@ -48,13 +80,15 @@ function Contact() {
                     Message
                   </label>
                   <textarea
+                    name="message"
                     className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-56 dark:placeholder-gray-600 dark:bg-secondary dark:text-gray-600 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                     placeholder="Message"
+                    required
                   ></textarea>
                 </div>
 
                 <button className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-buttonColor rounded-md hover:bg-h2Color hover:text-white focus:outline-none">
-                  get in touch
+                  Get in Touch
                 </button>
               </form>
             </div>
