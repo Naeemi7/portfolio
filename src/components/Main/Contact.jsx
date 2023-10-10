@@ -22,9 +22,8 @@ function Contact() {
           form.current.reset();
 
           Swal.fire({
-            // Display SweetAlert
-            title: "Good job!",
-            text: "Thank you for your message",
+            title: "Message Sent",
+            text: "Thank you for contacting me. Your message has been successfully sent.",
             icon: "success",
             timer: 3000,
             showCancelButton: false,
@@ -86,7 +85,7 @@ function Contact() {
                   </label>
                   <textarea
                     name="message"
-                    className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-56 dark:placeholder-gray-600 dark:bg-secondary dark:text-gray-600 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                    className="block w-full h-{{user_email}}32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-56 dark:placeholder-gray-600 dark:bg-secondary dark:text-gray-600 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                     placeholder="Message"
                     required
                   ></textarea>
