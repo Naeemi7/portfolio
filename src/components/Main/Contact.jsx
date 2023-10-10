@@ -1,12 +1,10 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
-import SectionSeperator from "../Seperator/SectionSeperator";
 import profile from "@images/contact/profile.png";
 
 function Contact() {
   const form = useRef();
-  const [isSuccessVisible, setIsSuccessVisible] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -32,12 +30,6 @@ function Contact() {
             showCancelButton: false,
             showConfirmButton: false,
           });
-
-          setIsSuccessVisible(true);
-
-          setTimeout(() => {
-            setIsSuccessVisible(false);
-          }, 5000);
         },
         (error) => {
           console.log(error.text);
@@ -47,7 +39,6 @@ function Contact() {
 
   return (
     <>
-      <SectionSeperator />
       <section className="min-h-xl bg-white dark:bg-secondary">
         <div className="container px-6 py-16 mx-auto">
           <div className="lg:flex lg:items-center lg:-mx-10">
@@ -105,25 +96,6 @@ function Contact() {
                   Get in Touch
                 </button>
               </form>
-              {isSuccessVisible && (
-                <div className="mt-4 text-green-500">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-5 h-5 inline-block mr-2"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                  Thank you for your message
-                </div>
-              )}
             </div>
 
             <div className="mt-12 lg:flex lg:mt-0 lg:flex-col lg:items-center lg:w-1/2 lg:mx-10">
