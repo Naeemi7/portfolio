@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import avatar from "@images/navbar/avatar.jpg";
 
@@ -51,37 +52,37 @@ function Navbar() {
           >
             <ul className="font-medium flex flex-col p-4 md:p-0 mt-2  rounded-lg bg-primary md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-primary md:dark:bg-primary ">
               <li>
-                <a
-                  href="#"
+                <NavLink
+                  to="/"
                   className="block py-2 pl-3 pr-4 text-white bg-primary rounded md:bg-transparent md:text-h1Color md:p-0 dark:text-white md:dark:text-h1Color"
                   aria-current="page"
                 >
                   Home
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  href="#"
+                <NavLink
+                  to="/skills"
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-h1Color md:p-0 dark:text-white md:dark:hover:text-h1Color dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Skills
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  href="#"
+                <NavLink
+                  to="/projects"
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-h1Color md:p-0 dark:text-white md:dark:hover:text-h1Color dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Projects
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  href="#"
+                <NavLink
+                  to="contact"
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-h1Color md:p-0 dark:text-white md:dark:hover:text-h1Color dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Contact
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>
