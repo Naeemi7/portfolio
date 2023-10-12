@@ -44,7 +44,7 @@ function Hero() {
   return (
     <>
       <div className="hero-container">
-        <section className="bg-white dark:bg-primary h-screen">
+        <section className="bg-white dark:bg-primary h-screen px-5">
           {/* Set height to 100vh for full viewport height */}
           <div className="flex items-center justify-center max-w-screen-xl h-full mx-auto px-4 py-8 lg:gap-8 xl:gap-0 lg:py-16 lg:grid lg:grid-cols-12">
             <div className="mr-auto lg:col-span-7">

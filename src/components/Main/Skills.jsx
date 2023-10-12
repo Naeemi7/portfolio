@@ -3,9 +3,9 @@ import skillAImages from "../../data/skill-images";
 
 function Skills() {
   return (
-    <div className="skills-main-container">
+    <div className="skills-main-container min-h-screen">
       <div className="skills-sub-container">
-        <section className="content-container">
+        <section className="content-container py-[30px]">
           <h2>My Skills</h2>
           <p>
             I use a combination of innovative development practices and reliable
@@ -16,7 +16,7 @@ function Skills() {
           </p>
         </section>
 
-        <section className="skills-wrapper">
+        <section className="skills-wrapper ">
           {skillAImages.map((item, index) => (
             <div className="skill" key={index}>
               <img
