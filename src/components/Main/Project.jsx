@@ -1,7 +1,5 @@
 import "../../styles/main.scss";
-
-import yogaProject from "@images/project/yoga-project.png";
-import todoProject from "@images/project/todo-project.png";
+import projectData from "../../data/project-data";
 
 function Card({ imageSrc, title, description, imageLink, buttonLink }) {
   return (
@@ -49,32 +47,6 @@ function Card({ imageSrc, title, description, imageLink, buttonLink }) {
 }
 
 function Project() {
-  const posts = [
-    {
-      imageSrc: yogaProject,
-      title: "Yoga and Meditation",
-      description: `Yoga and Meditation" is a web application designed to facilitate online yoga and meditation instruction classes.`,
-      imageLink: "https://yoga-and-meditation.netlify.app/",
-      buttonLink: "https://github.com/yoga-and-meditation/yoga-and-meditation/",
-    },
-    {
-      imageSrc: todoProject,
-      title: "TodoXpress",
-      description:
-        "TodoXpress is a Full Stack Todo List application built with the MERN stack (MongoDB, netlify serverless functions, React, and Node.js). It allows users to add, edit, delete, and mark tasks as done, providing a comprehensive task management solution.",
-      imageLink: "https://todoxpress.netlify.app/",
-      buttonLink: "https://github.com/Naeemi7/TodoXpress",
-    },
-    {
-      imageSrc: yogaProject,
-      description:
-        "Learn how to become a pro in web development through expert insights and tips.",
-      imageLink: "https://example.com/project3",
-      buttonLink: "https://example.com/project3",
-    },
-    // ... (other post data)
-  ];
-
   return (
     <div className="project-container">
       <div className="bg-gray-100 dark:bg-primary py-6 px-4 md:py-10 md:px-12">
@@ -84,8 +56,8 @@ function Project() {
           </h2>
         </div>
         <div className="container mx-auto flex flex-row flex-wrap gap-8 justify-center">
-          {posts.map((post, index) => (
-            <Card key={index} {...post} />
+          {projectData.map((data, index) => (
+            <Card key={index} {...data} />
           ))}
         </div>
       </div>
