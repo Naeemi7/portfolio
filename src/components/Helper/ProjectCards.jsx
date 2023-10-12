@@ -8,7 +8,11 @@ const ProjectCards = ({
   return (
     <div className="max-w-md bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 cards-container">
       <a href={imageLink} target="_blank" rel="noopener noreferrer">
-        <img className="w-full rounded-t-lg card-image" src={imageSrc} alt="" />
+        <img
+          className="w-[350px] h-[250px] rounded-t-lg card-image px-4 py-4 rounded-lg"
+          src={imageSrc}
+          alt=""
+        />
       </a>
       <div className="p-5">
         <a href="#">
@@ -24,7 +28,7 @@ const ProjectCards = ({
             href={buttonLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white rounded-lg bg-buttonColor hover:bg-h2Color hover:text-white"
+            className="inline-flex items-center justify-center px-4 py-2 text-base font-medium text-center text-white rounded-lg bg-buttonColor hover:bg-h2Color hover:text-white"
           >
             Read more
             <svg
