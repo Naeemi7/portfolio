@@ -6,10 +6,10 @@ const ProjectCards = ({
   buttonLink,
 }) => {
   return (
-    <div className="max-w-md bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 cards-container">
+    <div className="max-w-md bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 cards-container ">
       <a href={imageLink} target="_blank" rel="noopener noreferrer">
         <img
-          className="w-[350px] h-[250px] rounded-t-lg card-image px-4 py-4 rounded-lg"
+          className="w-[350px] h-[250px] card-image px-4 py-4 rounded-lg"
           src={imageSrc}
           alt=""
         />

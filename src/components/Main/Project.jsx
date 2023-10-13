@@ -4,9 +4,9 @@ import ProjectCards from "../Helper/ProjectCards";
 
 function Project() {
   return (
-    <div className="project-container">
-      <div className=" min-h-screen bg-gray-100 dark:bg-primary py-6 px-4 md:py-10 md:px-12 ">
-        <div className="text-center mt-8 mb-11">
+    <div className="project-container  ">
+      <div className="min-h-screen bg-gray-100 dark:bg-primary pt-16 px-4 md:py-10 md:px-12 lg:px-24 xl:px-32">
+        <div className="text-center xl:m-16 mb-11 pt-5 ">
           <h2 className="text-4xl font-extrabold dark:text-h2Color">
             Projects
           </h2>

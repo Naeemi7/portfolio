@@ -8,6 +8,11 @@ function Navbar() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <>
       <nav className="bg-primary border-gray-200 dark:bg-primary fixed top-0 left-0 right-0">
@@ -56,6 +61,7 @@ function Navbar() {
                   to="/"
                   className="block py-2 pl-3 pr-4 text-white bg-primary rounded md:bg-transparent md:text-h1Color md:p-0 dark:text-white md:dark:text-h1Color"
                   aria-current="page"
+                  onClick={closeMenu} // Close the menu on click
                 >
                   Home
                 </NavLink>
@@ -64,6 +70,7 @@ function Navbar() {
                 <NavLink
                   to="/skills"
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-h1Color md:p-0 dark:text-white md:dark:hover:text-h1Color dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  onClick={closeMenu} // Close the menu on click
                 >
                   Skills
                 </NavLink>
@@ -72,14 +79,16 @@ function Navbar() {
                 <NavLink
                   to="/projects"
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-h1Color md:p-0 dark:text-white md:dark:hover:text-h1Color dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  onClick={closeMenu} // Close the menu on click
                 >
                   Projects
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to="contact"
+                  to="/contact"
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-h1Color md:p-0 dark:text-white md:dark:hover:text-h1Color dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  onClick={closeMenu} // Close the menu on click
                 >
                   Contact
                 </NavLink>
