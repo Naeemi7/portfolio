@@ -38,7 +38,7 @@ function Contact() {
 
   return (
     <>
-      <section className="min-h-screen bg-white dark:bg-secondary">
+      <section className="contact-container min-h-screen bg-white dark:bg-secondary">
         <div className="container px-6 py-[120px] mx-auto">
           <div className="lg:flex lg:items-center lg:-mx-10">
             <div className="lg:w-1/2 lg:mx-10">
