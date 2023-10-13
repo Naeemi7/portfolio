@@ -39,7 +39,7 @@ function Contact() {
   return (
     <>
       <section className="contact-container min-h-screen bg-white dark:bg-secondary">
-        <div className="container px-6 py-[120px] mx-auto">
+        <div className="container px-6 py-[100px]  mx-auto">
           <div className="lg:flex lg:items-center lg:-mx-10">
             <div className="lg:w-1/2 lg:mx-10">
               <h1 className="text-2xl font-semibold text-gray-800 capitalize dark:text-primary lg:text-3xl">
