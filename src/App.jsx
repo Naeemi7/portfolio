@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./styles/App.scss";
+
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Main/Hero";
 import Skills from "./components/Main/Skills";

@@ -28,8 +28,8 @@ function Navbar() {
 
     // Define the active styles
     const activeStyles = {
-      color: "#ff6a3d",
-      backgroundColor: "#d5d6db",
+      backgroundColor: "#ff6a3d",
+      color: "white",
     };
 
     // Check if the current path matches the NavLink's "to" prop

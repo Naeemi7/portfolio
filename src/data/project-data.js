@@ -19,7 +19,7 @@ const projectData = [
   {
     imageSrc: yogaProject,
     title: "TodoXpress",
-    description: "test decription",
+    description: "Group Project",
     imageLink: "https://example.com/project3",
     buttonLink: "https://example.com/project3",
   },
