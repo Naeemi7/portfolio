@@ -1,5 +1,6 @@
 import yogaProject from "@images/project/yoga-project.png";
 import todoProject from "@images/project/todo-project.png";
+import itSolutionProject from "@images/project/itSolution.png";
 
 const projectData = [
   {
@@ -17,8 +18,8 @@ const projectData = [
     buttonLink: "https://github.com/Naeemi7/TodoXpress",
   },
   {
-    imageSrc: yogaProject,
-    title: "TodoXpress",
+    imageSrc: itSolutionProject,
+    title: "IT Solution",
     description: "Group Project",
     imageLink: "https://example.com/project3",
     buttonLink: "https://example.com/project3",
