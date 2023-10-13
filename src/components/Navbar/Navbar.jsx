@@ -1,9 +1,10 @@
-import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 import avatar from "@images/navbar/avatar.jpg";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -12,6 +13,10 @@ function Navbar() {
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
+
+  useEffect(() => {
+    closeMenu(); // Close the menu when the location changes
+  }, [location]);
 
   return (
     <>
@@ -69,7 +74,7 @@ function Navbar() {
               <li>
                 <NavLink
                   to="/skills"
-                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-h1Color md:p-0 dark:text-white md:dark:hover:text-h1Color dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-h1Color md:p-0 dark:text-white md:dark:hover-text-h1Color dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent"
                   onClick={closeMenu} // Close the menu on click
                 >
                   Skills
@@ -78,7 +83,7 @@ function Navbar() {
               <li>
                 <NavLink
                   to="/projects"
-                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-h1Color md:p-0 dark:text-white md:dark:hover:text-h1Color dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-h1Color md:p-0 dark:text-white md:dark:hover-text-h1Color dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent"
                   onClick={closeMenu} // Close the menu on click
                 >
                   Projects
@@ -87,7 +92,7 @@ function Navbar() {
               <li>
                 <NavLink
                   to="/contact"
-                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-h1Color md:p-0 dark:text-white md:dark:hover:text-h1Color dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-h1Color md:p-0 dark:text-white md:dark:hover-text-h1Color dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent"
                   onClick={closeMenu} // Close the menu on click
                 >
                   Contact
