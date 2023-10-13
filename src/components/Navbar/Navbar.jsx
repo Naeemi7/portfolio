@@ -15,8 +15,30 @@ function Navbar() {
   };
 
   useEffect(() => {
-    closeMenu(); // Close the menu when the location changes
+    // Close the menu when the location changes
+    closeMenu();
   }, [location]);
+
+  // Define a function to set styles for the active NavLink
+  const getNavLinkStyles = (path) => {
+    // Define the default styles
+    const defaultStyles = {
+      color: "white",
+    };
+
+    // Define the active styles
+    const activeStyles = {
+      color: "#ff6a3d",
+      backgroundColor: "#d5d6db",
+    };
+
+    // Check if the current path matches the NavLink's "to" prop
+    if (location.pathname === path) {
+      return activeStyles;
+    } else {
+      return defaultStyles;
+    }
+  };
 
   return (
     <>
@@ -33,7 +55,7 @@ function Navbar() {
             onClick={toggleMenu}
             data-collapse-toggle="navbar-default"
             type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus-ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover-bg-gray-700 dark:focus-ring-gray-600"
             aria-controls="navbar-default"
             aria-expanded={isMenuOpen}
           >
@@ -60,13 +82,14 @@ function Navbar() {
             } w-full md:block md:w-auto`}
             id="navbar-default"
           >
-            <ul className="font-medium flex flex-col p-4 md:p-0 mt-2  rounded-lg bg-primary md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-primary md:dark:bg-primary ">
+            <ul className="font-medium flex flex-col p-4 md:p-0 mt-2 rounded-lg bg-primary md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-trasparent dark:bg-primary md:dark-bg-primary">
               <li>
                 <NavLink
                   to="/"
-                  className="block py-2 pl-3 pr-4 text-white bg-primary rounded md:bg-transparent md:text-h1Color md:p-0 dark:text-white md:dark:text-h1Color"
+                  className="block py-2 pl-3 pr-4 text-white bg-primary rounded md:bg-transparent md-text-h1Color md-p-0 dark-text-white md-dark-text-h1Color"
                   aria-current="page"
-                  onClick={closeMenu} // Close the menu on click
+                  onClick={closeMenu}
+                  style={getNavLinkStyles("/")}
                 >
                   Home
                 </NavLink>
@@ -74,8 +97,9 @@ function Navbar() {
               <li>
                 <NavLink
                   to="/skills"
-                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-h1Color md:p-0 dark:text-white md:dark:hover-text-h1Color dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent"
-                  onClick={closeMenu} // Close the menu on click
+                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md-hover-bg-transparent md-border-0 md-hover-text-h1Color md-p-0 dark-text-white md-dark-text-h1Color"
+                  onClick={closeMenu}
+                  style={getNavLinkStyles("/skills")}
                 >
                   Skills
                 </NavLink>
@@ -83,8 +107,9 @@ function Navbar() {
               <li>
                 <NavLink
                   to="/projects"
-                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-h1Color md:p-0 dark:text-white md:dark:hover-text-h1Color dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent"
-                  onClick={closeMenu} // Close the menu on click
+                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md-hover-bg-transparent md-border-0 md-hover-text-h1Color md-p-0 dark-text-white md-dark-text-h1Color"
+                  onClick={closeMenu}
+                  style={getNavLinkStyles("/projects")}
                 >
                   Projects
                 </NavLink>
@@ -92,8 +117,9 @@ function Navbar() {
               <li>
                 <NavLink
                   to="/contact"
-                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-h1Color md:p-0 dark:text-white md:dark:hover-text-h1Color dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent"
-                  onClick={closeMenu} // Close the menu on click
+                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md-hover-bg-transparent md-border-0 md-hover-text-h1Color md-p-0 dark-text-white md-dark-text-h1Color"
+                  onClick={closeMenu}
+                  style={getNavLinkStyles("/contact")}
                 >
                   Contact
                 </NavLink>
