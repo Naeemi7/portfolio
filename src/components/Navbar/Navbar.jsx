@@ -86,7 +86,7 @@ function Navbar() {
               <li>
                 <NavLink
                   to="/"
-                  className="block py-2 pl-3 pr-4 text-white bg-primary rounded md:bg-transparent md-text-h1Color md-p-0 dark-text-white md-dark-text-h1Color"
+                  className="block py-2 pl-3 pr-4 text-white bg-primary rounded md:bg-transparent md-text-h1Color md-p-0 dark-text-white md-dark-text-h1Color text-lg"
                   aria-current="page"
                   onClick={closeMenu}
                   style={getNavLinkStyles("/")}
@@ -97,7 +97,7 @@ function Navbar() {
               <li>
                 <NavLink
                   to="/skills"
-                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md-hover-bg-transparent md-border-0 md-hover-text-h1Color md-p-0 dark-text-white md-dark-text-h1Color"
+                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md-hover-bg-transparent md-border-0 md-hover-text-h1Color md-p-0 dark-text-white md-dark-text-h1Color text-lg"
                   onClick={closeMenu}
                   style={getNavLinkStyles("/skills")}
                 >
@@ -107,7 +107,7 @@ function Navbar() {
               <li>
                 <NavLink
                   to="/projects"
-                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md-hover-bg-transparent md-border-0 md-hover-text-h1Color md-p-0 dark-text-white md-dark-text-h1Color"
+                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md-hover-bg-transparent md-border-0 md-hover-text-h1Color md-p-0 dark-text-white md-dark-text-h1Color text-lg"
                   onClick={closeMenu}
                   style={getNavLinkStyles("/projects")}
                 >
@@ -117,7 +117,7 @@ function Navbar() {
               <li>
                 <NavLink
                   to="/contact"
-                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md-hover-bg-transparent md-border-0 md-hover-text-h1Color md-p-0 dark-text-white md-dark-text-h1Color"
+                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md-hover-bg-transparent md-border-0 md-hover-text-h1Color md-p-0 dark-text-white md-dark-text-h1Color text-lg"
                   onClick={closeMenu}
                   style={getNavLinkStyles("/contact")}
                 >
