@@ -3,7 +3,7 @@ import skillAImages from "../../data/skill-images";
 
 function Skills() {
   return (
-    <div className="skills-main-container min-h-screen">
+    <div className="skills-main-container min-h-xl">
       <div className="skills-sub-container">
         <section className="content-container py-[30px]">
           <h2>My Skills</h2>

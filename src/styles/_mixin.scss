@@ -1,6 +1,6 @@
 /* Heading two mixin */
 @mixin styled-heading-2 {
-  color: $primary-background-color;
+  color: $heading-two-color;
   font-size: 2.5rem;
   font-family: "Inter", sans-serif;
   font-weight: 800;
@@ -14,12 +14,12 @@
   margin-top: 2.5rem;
   font-weight: 300;
   text-align: center;
-  color: #302e2eab;
+  color: $secondary-background-color;
 
   @media (min-width: 640px) {
     font-weight: 400;
     margin-bottom: 2rem;
-    color: #302e2eab;
+    color: $secondary-background-color;
     font-size: 1.25rem;
   }
 }
