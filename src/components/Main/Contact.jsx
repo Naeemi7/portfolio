@@ -60,20 +60,20 @@ function Contact() {
                       type="text"
                       name="user_name"
                       placeholder="John Doe"
-                      className="block w-full px-5 py-3 mt-2 text-gray-300 placeholder-gray-300 bg-white border border-gray-600 rounded-md dark:placeholder-gray-400 dark:bg-primary dark:text-gray-600 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                      className="block w-full px-5 py-3 mt-2 text-gray-300 placeholder-gray-300 bg-white border border-gray-600 rounded-md dark:placeholder-gray-300 dark:bg-primary dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                       required
                     />
                   </div>
 
                   <div className="flex-1 px-2 mt-4 md:mt-0">
-                    <label className="block mb-2 text-sm text-gray-600 dark:text-gray-800">
+                    <label className="block mb-2 text-sm text-gray-300 dark:text-gray-300">
                       Email address
                     </label>
                     <input
                       type="email"
                       name="user_email"
                       placeholder="johndoe@example.com"
-                      className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-primary dark:text-gray-600 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                      className="block w-full px-5 py-3 mt-2 text-gray-300 placeholder-gray-300 bg-white border border-gray-600 rounded-md dark:placeholder-gray-300 dark:bg-primary dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                       required
                     />
                   </div>
@@ -85,7 +85,7 @@ function Contact() {
                   </label>
                   <textarea
                     name="message"
-                    className="block w-full h-{{user_email}}32 px-5 py-3 mt-2 text-gray-400 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-56 dark:placeholder-gray-600 dark:bg-primary dark:text-gray-600 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                    className="block w-full h-{{user_email}}32 px-5 py-3 mt-2 text-gray-300 placeholder-gray-300 bg-white border border-gray-200 rounded-md md:h-56 dark:placeholder-gray-300 dark:bg-primary dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                     placeholder="Message"
                     required
                   ></textarea>

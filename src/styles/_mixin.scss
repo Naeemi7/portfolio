@@ -14,12 +14,12 @@
   margin-top: 2.5rem;
   font-weight: 300;
   text-align: center;
-  color: $secondary-background-color;
+  color: $paragraph-text-color;
 
   @media (min-width: 640px) {
     font-weight: 400;
     margin-bottom: 2rem;
-    color: $secondary-background-color;
+    color: $paragraph-text-color;
     font-size: 1.25rem;
   }
 }

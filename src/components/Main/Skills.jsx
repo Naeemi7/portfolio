@@ -7,7 +7,7 @@ function Skills() {
       <div className="skills-sub-container">
         <section className="content-container py-[30px]">
           <h2>My Skills</h2>
-          <p>
+          <p className="skill-card-content">
             I use a combination of innovative development practices and reliable
             software engineering principles to build user-centered,
             high-performance, and responsive web applications. I am passionate
