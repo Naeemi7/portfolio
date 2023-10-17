@@ -1,22 +1,42 @@
-import "../../styles/main.scss";
+import "../../styles/project.scss";
 import projectData from "../../data/project-data";
-import ProjectCards from "../Helper/ProjectCards";
 
 function Project() {
   return (
-    <div className="project-container  ">
-      <div className="min-h-screen bg-gray-100 dark:bg-primary pt-16 px-4 md:py-10 md:px-12 lg:px-24 xl:px-32">
-        <div className="text-center xl:m-16 mb-11 pt-5 ">
-          <h2 className="text-4xl font-extrabold dark:text-h2Color">
-            Projects
-          </h2>
+    <div className="project-container">
+      {projectData.map((item, index) => (
+        <div key={index} className="cards">
+          <div className="card-image-container">
+            <img
+              src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2126&q=80"
+              alt=""
+              className="card-image"
+            />
+          </div>
+          <svg className="card-svg" viewBox="0 0 800 500">
+            <path
+              d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500"
+              stroke="transparent"
+            />
+            <path
+              className="card-line"
+              d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400"
+              stroke="pink"
+              strokeWidth="3"
+              fill="transparent"
+            />
+          </svg>
+
+          <div className="card-content">
+            <h3 className="card-title">{item.title}</h3>
+            <p>{item.description}</p>
+          </div>
+
+          <div className="card-button">
+            <a href={item.buttonLink}>Learn More</a>
+          </div>
         </div>
-        <div className="container mx-auto flex flex-row flex-wrap gap-8 justify-center">
-          {projectData.map((data, index) => (
-            <ProjectCards key={index} {...data} />
-          ))}
-        </div>
-      </div>
+      ))}
     </div>
   );
 }
