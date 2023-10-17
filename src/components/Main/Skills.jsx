@@ -1,35 +1,39 @@
 import "../../styles/main.scss";
 import skillAImages from "../../data/skill-images";
+import Seperator from "../Helper/Seperator";
 
 function Skills() {
   return (
-    <div className="skills-main-container min-h-xl">
-      <div className="skills-sub-container">
-        <section className="content-container py-[30px]">
-          <h2>My Skills</h2>
-          <p className="skill-card-content">
-            I use a combination of innovative development practices and reliable
-            software engineering principles to build user-centered,
-            high-performance, and responsive web applications. I am passionate
-            about creating applications that are easy to use, fast, and
-            accessible to everyone.
-          </p>
-        </section>
+    <>
+      <Seperator />
+      <div className="skills-main-container min-h-xl">
+        <div className="skills-sub-container">
+          <section className="content-container py-[30px]">
+            <h2>My Skills</h2>
+            <p className="skill-card-content">
+              I use a combination of innovative development practices and
+              reliable software engineering principles to build user-centered,
+              high-performance, and responsive web applications. I am passionate
+              about creating applications that are easy to use, fast, and
+              accessible to everyone.
+            </p>
+          </section>
 
-        <section className="skills-wrapper ">
-          {skillAImages.map((item, index) => (
-            <div className="skill" key={index}>
-              <img
-                className="skill-image"
-                src={item.image}
-                alt={`Skill ${index}`}
-              />
-              <p className="skill-title">{item.title}</p>
-            </div>
-          ))}
-        </section>
+          <section className="skills-wrapper ">
+            {skillAImages.map((item, index) => (
+              <div className="skill" key={index}>
+                <img
+                  className="skill-image"
+                  src={item.image}
+                  alt={`Skill ${index}`}
+                />
+                <p className="skill-title">{item.title}</p>
+              </div>
+            ))}
+          </section>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

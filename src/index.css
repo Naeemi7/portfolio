@@ -19,4 +19,6 @@
 }
 body {
   background-color: #1a2238;
+  display: flex;
+  justify-content: center;
 }

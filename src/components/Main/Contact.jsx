@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
 import profile from "@images/contact/profile.png";
+import Seperator from "../Helper/Seperator";
 
 function Contact() {
   const form = useRef();
@@ -38,6 +39,7 @@ function Contact() {
 
   return (
     <>
+      <Seperator />
       <section className="contact-container min-h-xl bg-white dark:bg-primary">
         <div className="container px-6 py-[100px]  mx-auto">
           <div className="lg:flex lg:items-center lg:-mx-10">
