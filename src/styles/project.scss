@@ -3,6 +3,7 @@
 @import "media-query";
 
 .project-container {
+  border: 1px solid red;
   display: flex;
   line-height: 1.5;
   align-items: center;
@@ -13,7 +14,7 @@
   position: relative;
 
   /* Cards */
-  .cards {
+  .project-cards {
     position: relative;
     background: #121c31;
     width: 350px;

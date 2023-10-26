@@ -51,18 +51,11 @@
         justify-content: center;
         align-items: center;
         gap: 1rem;
-        // background-color: rgba(255, 255, 255, 0.409);
-        // border-radius: 8px;
-        // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        // transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
-        //   background-color 2s infinite;
-
-        backdrop-filter: blur(16px) saturate(180%);
-        -webkit-backdrop-filter: blur(16px) saturate(180%);
-        background-color: rgba(17, 25, 40, 0.75);
-        border-radius: 12px;
-        border: 1px solid rgba(255, 255, 255, 0.125);
-        color: rgba(255, 255, 255, 0.606);
+        background-color: rgba(255, 255, 255, 0.409);
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
+          background-color 2s infinite;
 
         &:hover {
           transform: scale(1.1);
