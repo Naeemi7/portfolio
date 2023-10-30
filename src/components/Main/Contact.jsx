@@ -44,13 +44,13 @@ function Contact() {
         <div className="container px-6 py-[100px]  mx-auto">
           <div className="lg:flex lg:items-center lg:-mx-10">
             <div className="lg:w-1/2 lg:mx-10">
-              <h1 className="text-2xl font-semibold text-gray-300 capitalize dark:text-h2Color lg:text-3xl">
+              <h2 className="text-2xl font-semibold text-gray-300 capitalize dark:text-h2Color lg:text-3xl">
                 Let’s talk
-              </h1>
-
-              <h2 className="mt-5 text-gray-300 dark:text-grey-300">
-                Ask me everything, and I would love to hear from you
               </h2>
+
+              <h3 className="mt-5 text-gray-300 dark:text-grey-300">
+                Ask me everything, and I would love to hear from you
+              </h3>
 
               <form className="mt-12" ref={form} onSubmit={sendEmail}>
                 <div className="-mx-2 md:items-center md:flex">
