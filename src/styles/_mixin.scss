@@ -1,0 +1,25 @@
+/* Heading two mixin */
+@mixin styled-heading-2 {
+  color: $primary-background-color;
+  font-size: 2.5rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+/* paragrap mixin */
+@mixin styled-paragraph {
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
+  font-weight: 300;
+  text-align: center;
+  color: #302e2eab;
+
+  @media (min-width: 640px) {
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: #302e2eab;
+    font-size: 1.25rem;
+  }
+}

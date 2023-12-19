@@ -1,0 +1,97 @@
+@import "variables";
+@import "mixin";
+@import "media-query";
+
+/* About component Stylesheet */
+.skills-main-container {
+  background-color: $secondary-background-color;
+  padding-top: 2rem;
+
+  .skills-sub-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+
+    h3 {
+      @include styled-heading-2;
+      margin-left: 2.4rem;
+      margin-bottom: 2rem;
+      border-bottom: 2px solid $button-color;
+    }
+
+    .soft-skills-heading {
+      margin-top: 3rem;
+    }
+
+    .content-container {
+      h2 {
+        @include styled-heading-2;
+        margin-bottom: 2rem;
+      }
+      p {
+        @include styled-paragraph;
+      }
+    }
+
+    .skills-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 4rem;
+      gap: 1rem;
+
+      .skill {
+        width: 8rem;
+        height: 8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        background-color: rgba(255, 255, 255, 0.409);
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
+          background-color 2s infinite;
+
+        &:hover {
+          transform: scale(1.1);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+          cursor: pointer;
+        }
+
+        .skill-image {
+          height: 3rem;
+          width: 3rem;
+        }
+
+        .skill-title {
+          font-weight: bold;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+/* Hero component Stylesheet */
+/* .hero-container {
+  .hero-image {
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      animation: pulse 1s infinite alternate;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.1);
+      }
+    }
+  }
+} */
